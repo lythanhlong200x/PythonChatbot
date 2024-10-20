@@ -1,0 +1,299 @@
+{
+  "intents": [
+    {
+      "tag": "chao_hoi",
+      "patterns": [
+        "Chào",
+        "Xin chào",
+        "Hi",
+        "Hello",
+        "Chào bạn"
+      ],
+      "responses": [
+        "Xin chào! Tôi có thể giúp gì cho bạn?",
+        "Chào bạn, cảm ơn vì đã ghé thăm!",
+        "Xin chào, bạn cần hỗ trợ gì?",
+        "Chào mừng bạn! Bạn muốn hỏi gì?"
+      ]
+    },
+    {
+      "tag": "tam_biet",
+      "patterns": [
+        "Tạm biệt",
+        "Chào tạm biệt",
+        "Goodbye",
+        "Bye",
+        "Hẹn gặp lại"
+      ],
+      "responses": [
+        "Tạm biệt! Cảm ơn bạn đã ghé thăm.",
+        "Chúc bạn một ngày tốt lành, hẹn gặp lại!",
+        "Tạm biệt! Hy vọng sẽ gặp lại bạn sớm."
+      ]
+    },
+    {
+      "tag": "cam_on",
+      "patterns": [
+        "Cảm ơn",
+        "Cảm ơn bạn",
+        "Thanks",
+        "Thank you",
+        "Rất hữu ích",
+        "Cảm ơn nhiều"
+      ],
+      "responses": [
+        "Rất vui được giúp bạn!",
+        "Không có gì, rất hân hạnh!",
+        "Cảm ơn bạn! Chúc bạn học tập tốt!",
+        "Cảm ơn bạn! Có câu hỏi gì bạn cứ hỏi, tôi sẵn lòng trả lời."
+      ]
+    },
+    {
+      "tag": "khoa_hoc",
+      "patterns": [
+        "Khóa học ở đây có các ngôn ngữ gì",
+        "Khóa học dạy những gì?",
+        "Chi tiết khóa học",
+        "Bạn có những khóa học nào?",
+        "Tôi có thể học gì ở đây?",
+        "Những khóa học lập trình của bạn?",
+        "Bạn dạy những ngôn ngữ lập trình nào?"
+      ],
+      "responses": [
+        "Chúng tôi có các khóa học về Python, JavaScript, Java, C++, và HTML/CSS.",
+        "Các khóa học của chúng tôi bao gồm Python, Java, và lập trình web full-stack.",
+        "Bạn có thể học lập trình Python, JavaScript và nhiều ngôn ngữ khác tại đây."
+      ]
+    },
+    {
+      "tag": "thoi_gian_hoc",
+      "patterns": [
+        "Thời gian học",
+        "Trung bình thời gian học là bao lâu",
+        "Khóa học kéo dài bao lâu?",
+        "Thời gian của mỗi khóa học là bao nhiêu?",
+        "Khóa học mất bao lâu để hoàn thành?"
+      ],
+      "responses": [
+        "Trung bình các khóa học sẽ từ 1-2 tháng, tùy thuộc vào độ dài của khóa học",
+        "Hầu hết các khóa học dành cho người mới bắt đầu kéo dài từ 4-6 tuần, nâng cao sẽ từ 2-6 tháng.",
+        "Thời gian học sẽ được ghi cụ thể trong mô tả của từng khóa học."
+      ]
+    },
+    {
+      "tag": "hoc_phi",
+      "patterns": [
+        "Học phí bao nhiêu",
+        "Giá khóa học là bao nhiêu",
+        "Giá mỗi khóa học",
+        "Học phí khóa học là bao nhiêu?",
+        "Khóa học có giá bao nhiêu?",
+        "Tôi phải trả bao nhiêu cho khóa học này?"
+      ],
+      "responses": [
+        "Chúng tôi cung cấp cả khóa học miễn phí và có phí. Bạn có thể xem chi tiết trên trang của từng khóa học. ",
+        "Giá khóa học khác nhau, hãy truy cập trang khóa học để biết thông tin chi tiết."
+      ]
+    },
+    {
+      "tag": "giang_vien",
+      "patterns": [
+        "Giáo viên nào sẽ dạy tôi",
+        "Giảng viên phụ trách?",
+        "Ai sẽ là người giảng dạy?",
+        "Giảng viên sẽ phụ trách tôi?",
+        "Ai phụ trách khóa học này?",
+        "Thông tin về giảng viên như thế nào?"
+      ],
+      "responses": [
+        "Các giảng viên của chúng tôi là những chuyên gia có nhiều năm kinh nghiệm trong lĩnh vực lập trình và giảng dạy.",
+        "Bạn sẽ được hướng dẫn bởi các lập trình viên chuyên nghiệp với kinh nghiệm thực tiễn dày dặn.",
+        "Khóa học được dẫn dắt bởi những giảng viên giàu kinh nghiệm và đam mê giảng dạy.",
+        "Thông tin về giáo viên phụ trách khóa học sẽ được ghi ở đầu khóa học."
+      ]
+    },
+    {
+      "tag": "khoa_hoc_cho_nguoi_moi",
+      "patterns": [
+        "Cho người mới",
+        "Chưa có kinh nghiệm học lập trình",
+        "Tôi mới bắt đầu, có khóa học nào cho người mới không?",
+        "Nếu tôi không có kinh nghiệm thì sao?",
+        "Cho người mới học",
+        "khóa học cho người mới",
+        "Tôi chưa biết lập trình, có tham gia được không?"
+      ],
+      "responses": [
+        "Chắc chắn rồi! Chúng tôi có các khóa học dành cho người mới bắt đầu không cần kinh nghiệm trước.",
+        "Có, các khóa học cho người mới sẽ giúp bạn học từ những kiến thức cơ bản nhất.",
+        "Chúng tôi có nhiều khóa học phù hợp cho người mới bắt đầu học lập trình."
+      ]
+    },
+    {
+      "tag": "dang_ky",
+      "patterns": [
+        "Cách đăng ký học?",
+        "Hình thức đăng ký",
+        "Dăng ký thế nào",
+        "Làm sao để tôi đăng ký khóa học?",
+        "Quy trình đăng ký khóa học như thế nào?",
+        "Tôi cần làm gì để tham gia khóa học?"
+      ],
+      "responses": [
+        "Để đăng ký, bạn chỉ cần vào trang khóa học và bấm nút 'Đăng ký ngay'.",
+        "Bạn có thể đăng ký khóa học bằng cách chọn khóa học và làm theo hướng dẫn trên màn hình.",
+        "Đăng ký rất dễ dàng! Chỉ cần chọn khóa học và bấm vào nút 'Đăng ký'."
+      ]
+    },
+    {
+      "tag": "phuong_thuc_thanh_toan",
+      "patterns": [
+        "Phương thức thanh toán",
+        "Tôi có thể thanh toán bằng những phương thức nào?",
+        "Bạn có chấp nhận thẻ tín dụng không?",
+        "Tôi có thể trả qua Momo được không?",
+        "Trả bằng tiền mặt được không?"
+      ],
+      "responses": [
+        "Chúng tôi chấp nhận thanh toán qua thẻ Visa, Mastercard, ZaloPay, Momo, VnPay và các phương thức khác.",
+        "Bạn có thể thanh toán bằng thẻ tín dụng, chuyển khoản, Momo hoặc Zalopay và các phương thức thanh toán trực tuyến.",
+        "Chúng tôi hỗ trợ nhiều phương thức thanh toán, bao gồm thẻ tín dụng và các ví điện tử."
+      ]
+    },
+    {
+      "tag": "chinh_sach_hoan_tien",
+      "patterns": [
+        "Tôi không muốn học nữa và muốn hoàn tiền",
+        "Thời gian hoàn tiền",
+        "Chính sách hoàn tiền",
+        "Tôi có thể hoàn tiền không?",
+        "Chính sách hoàn tiền của bạn như thế nào?",
+        "Làm sao để yêu cầu hoàn tiền?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách hoàn tiền trong vòng 30 ngày nếu bạn không hài lòng với khóa học.",
+        "Bạn có thể yêu cầu hoàn tiền trong vòng 30 ngày sau khi mua khóa học.",
+        "Chính sách hoàn tiền của chúng tôi cho phép bạn nhận lại tiền trong vòng 30 ngày kể từ khi mua khóa học."
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "Support",
+        "Hỗ trợ",
+        "Tôi có vấn đề với khóa học",
+        "Làm sao để liên hệ hỗ trợ?",
+        "Có thể hỗ trợ tôi không?",
+        "Liên hệ hỗ trợ như thế nào?"
+      ],
+      "responses": [
+        "Bạn có thể liên hệ với đội hỗ trợ qua email hoặc số điện thoại trên trang web.",
+        "Chúng tôi luôn sẵn sàng hỗ trợ, bạn có thể gửi email hoặc gọi đến hotline.",
+        "Nếu bạn gặp vấn đề, vui lòng liên hệ với đội ngũ hỗ trợ qua thông tin trên trang chủ."
+      ]
+    },
+    {
+      "tag": "gioi_thieu_khoa_hoc",
+      "patterns": [
+        "Giới thiệu khóa học",
+        "Khóa học này dành cho đối tượng nào?",
+        "Khóa học này có phù hợp với tôi không?",
+        "Ai nên tham gia khóa học này?",
+        "Khóa học này có yêu cầu kiến thức nền không?"
+      ],
+      "responses": [
+        "Khóa học này dành cho mọi người, từ người mới bắt đầu đến người có kinh nghiệm.",
+        "Khóa học này phù hợp với những ai muốn nâng cao kỹ năng lập trình."
+      ]
+    },
+    {
+      "tag": "chung_chi",
+      "patterns": [
+        "Chứng chỉ",
+        "Tôi có nhận được chứng chỉ không?",
+        "Hoàn thành khóa học có chứng chỉ không?",
+        "Chứng chỉ khóa học này có giá trị không?",
+        "Khóa học này có cấp chứng chỉ không?"
+      ],
+      "responses": [
+        "Bạn sẽ nhận được chứng chỉ khi hoàn thành khóa học.",
+        "Chứng chỉ sẽ được cấp sau khi bạn hoàn thành tất cả các bài tập và dự án của khóa học.",
+        "Chứng chỉ của chúng tôi có giá trị quốc tế và được nhiều công ty công nhận."
+      ]
+    },
+    {
+      "tag": "faq",
+      "patterns": [
+        "FAQ",
+        "Tôi có thể tìm câu hỏi thường gặp ở đâu?",
+        "FAQ của khóa học này ở đâu?",
+        "Có trang FAQ không?",
+        "Câu hỏi thường gặp về khóa học?"
+      ],
+      "responses": [
+        "Bạn có thể xem trang FAQ của chúng tôi tại mục hỗ trợ trên website.",
+        "Các câu hỏi thường gặp được liệt kê trong phần hỗ trợ của trang chủ.",
+        "Vui lòng truy cập trang FAQ để tìm câu trả lời cho các thắc mắc thường gặp."
+      ]
+    },
+    {
+      "tag": "tai_lieu_hoc_tap",
+      "patterns": [
+        "Documents",
+        "Tài liệu học tập",
+        "Tôi có thể tìm tài liệu học tập ở đâu?",
+        "Có sách hoặc tài liệu nào cho khóa học không?",
+        "Khóa học có cung cấp tài liệu không?",
+        "Làm sao để tải tài liệu học tập?"
+      ],
+      "responses": [
+        "Tài liệu học tập sẽ được cung cấp qua nền tảng trực tuyến của khóa học.",
+        "Bạn có thể tải xuống tài liệu từ trang khóa học sau khi đăng ký."
+      ]
+    },
+    {
+      "tag": "danh_gia_khoa_hoc",
+      "patterns": [
+        "Khóa học này có được đánh giá không?",
+        "Tôi có thể xem đánh giá khóa học ở đâu?",
+        "Người học trước đánh giá thế nào về khóa học này?",
+        "Có phản hồi nào từ học viên không?"
+      ],
+      "responses": [
+        "Bạn có thể xem các đánh giá từ học viên trên trang khóa học.",
+        "Chúng tôi rất hoan nghênh phản hồi từ học viên và luôn cập nhật thông tin đánh giá.",
+        "Khóa học đã nhận được nhiều phản hồi tích cực từ những học viên trước."
+      ]
+    },
+    {
+      "tag": "chinh_sach_bao_mat",
+      "patterns": [
+        "Chính sách bảo mật",
+        "Dữ liệu của tôi có được bảo mật không?",
+        "Bạn có chính sách bảo mật nào không?",
+        "Làm sao để biết thông tin của tôi được bảo vệ?",
+        "Chính sách bảo mật của bạn như thế nào?"
+      ],
+      "responses": [
+        "Chúng tôi có chính sách bảo mật nghiêm ngặt để bảo vệ thông tin của bạn.",
+        "Thông tin cá nhân của bạn sẽ được bảo vệ và không được chia sẻ với bên thứ ba.",
+        "Bạn có thể xem chi tiết chính sách bảo mật trên trang web của chúng tôi."
+      ]
+    },
+    {
+      "tag": "cong_dong_hoc_vien",
+      "patterns": [
+        "Cộng đồng học viên",
+        "Diễn đàn trao đổi",
+        "Tôi có thể trao đổi với các bạn học khác được không?",
+        "Nếu gặp khó khăn tôi phải làm gì",
+        "Diễn đàn cho học viên"
+      ],
+      "responses": [
+        "Chúng tôi khuyến khích học viên kết nối và chia sẻ với nhau thông qua nhóm trên Facebook hoặc trên Fanpage, nếu gặp khó khăn đừng ngần ngại trao đổi.",
+        "Bạn có thể tham gia diễn đàn trên trang web của chúng tôi để trao đổi với các học viên khác.",
+        "Cộng đồng hỏi đáp diễn ra ngay dưới khóa học, bạn có thể theo dõi thông tin trên trang web và giải đáp thắc mắc tại đây."
+      ]
+    }
+  ]
+}
