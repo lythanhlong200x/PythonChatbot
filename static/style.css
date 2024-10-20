@@ -267,3 +267,50 @@ html {
     box-shadow: 0px 4px 10px rgba(172, 39, 39, 0.2);
     /* Đổ bóng cho khung */
 }
+
+/* CHATBOX MAXIMIZED */
+.chatbox--maximized {
+    width: 90vw;
+    /* Tăng chiều rộng lên 90% màn hình */
+    height: 80vh;
+    /* Tăng chiều cao lên 80% màn hình */
+    bottom: 10vh;
+    /* Điều chỉnh vị trí từ cạnh dưới */
+    right: 5vw;
+    /* Điều chỉnh vị trí từ cạnh phải */
+    transition: all 0.3s ease;
+    /* Thêm hiệu ứng chuyển đổi */
+    z-index: 9999;
+    /* Đưa chatbot lên trên cùng */
+    border-radius: 10px;
+    /* Giảm độ bo tròn góc để hợp với kích thước lớn */
+}
+
+.chatbox__support--maximized {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    /* Hiệu ứng chuyển đổi */
+}
+
+.chatbox__header--maximized {
+    border-radius: 10px 10px 0 0;
+}
+
+.chatbox__footer--maximized {
+    border-radius: 0 0 10px 10px;
+}
+
+.chatbox__expand-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 999;
+}
+
+.chatbox__expand-icon i {
+    transition: all 0.3s ease;
+}

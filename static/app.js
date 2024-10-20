@@ -4,25 +4,31 @@ class Chatbox {
             openButton: document.querySelector('.chatbox__button'),
             chatBox: document.querySelector('.chatbox__support'),
             sendButton: document.querySelector('.send__button'),
-            header: document.querySelector('.chatbox__content--header')  // Thêm phần header để thay đổi giao diện
+            header: document.querySelector('.chatbox__content--header'),
+            expandIcon: document.querySelector('.chatbox__expand-icon .fa-expand'),
+            compressIcon: document.querySelector('.chatbox__expand-icon .fa-compress') // Thêm phần header để thay đổi giao diện
         }
         this.state = false;
+        this.isExpanded = false;
         this.messages = [];
         this.currentBotMode = 'support';  // Mặc định là chatbot hỗ trợ
     }
 
     display() {
-        const { openButton, chatBox, sendButton } = this.args;
+        const { openButton, chatBox, sendButton, expandIcon, compressIcon } = this.args;
 
         openButton.addEventListener('click', () => this.toggleState(chatBox));
         sendButton.addEventListener('click', () => this.onSendButton(chatBox));
-
+        expandIcon.addEventListener('click', () => this.toggleMaximize(chatBox, expandIcon, compressIcon));  // Sự kiện cho icon phóng to
+        compressIcon.addEventListener('click', () => this.toggleMaximize(chatBox, expandIcon, compressIcon)); // Sự kiện cho icon thu nhỏ
         const node = chatBox.querySelector('input');
         node.addEventListener("keyup", ({ key }) => {
             if (key === "Enter") {
                 this.onSendButton(chatBox);
             }
         });
+
+
     }
 
     toggleState(chatbox) {
@@ -33,7 +39,18 @@ class Chatbox {
             chatbox.classList.remove('chatbox--active');
         }
     }
-
+    toggleMaximize(chatbox, expandIcon, compressIcon) {
+        this.isMaximized = !this.isMaximized;
+        if (this.isMaximized) {
+            chatbox.classList.add('chatbox--maximized');
+            expandIcon.style.display = 'none';
+            compressIcon.style.display = 'block'; // Hiện icon thu nhỏ
+        } else {
+            chatbox.classList.remove('chatbox--maximized');
+            expandIcon.style.display = 'block'; // Hiện icon phóng to
+            compressIcon.style.display = 'none';
+        }
+    }
     onSendButton(chatbox) {
         var textField = chatbox.querySelector('input');
         let text1 = textField.value;

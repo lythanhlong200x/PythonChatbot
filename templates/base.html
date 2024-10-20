@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 <head>
     <meta charset="UTF-8">
@@ -17,6 +19,11 @@
                 <div  id="chatbot_support" class="chatbox__content--header">
                     <h4 class="chatbox__heading--header">Chatbot Hỗ trợ</h4>
                     <p class="chatbox__description--header">Xin chào! Mình là Mei - Chatbot của bạn 😇😇😇 </p>
+                  
+                </div>
+                <div class="chatbox__expand-icon">
+                    <i class="fas fa-expand"></i> <!-- Icon phóng to -->
+                    <i class="fas fa-compress" style="display: none;"></i> <!-- Icon thu nhỏ -->
                 </div>
             
                 
